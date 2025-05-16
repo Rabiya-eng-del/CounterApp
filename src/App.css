@@ -1,0 +1,88 @@
+/* App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-container {
+  text-align: center;
+  background: #1f1f1f;
+  padding: 50px 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-size: 36px;
+}
+
+.counter-circle {
+  width: 180px;
+  height: 180px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Blue-Purple */
+  margin: 0 auto;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 0 20px #2575fc, 0 0 40px #6a11cb;
+  animation: glow 2s infinite alternate;
+}
+
+
+/* Circle glow animation */
+@keyframes glow {
+  from {
+    box-shadow: 0 0 20px #ff4b2b, 0 0 40px #ff416c;
+  }
+  to {
+    box-shadow: 0 0 30px #ff4b2b, 0 0 60px #ff416c;
+  }
+}
+
+.button-group {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 12px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn.inc {
+  background: #00c853;
+}
+
+.btn.dec {
+  background: #d50000;
+}
+
+.btn.reset {
+  background: #2962ff;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  opacity: 0.85;
+}
